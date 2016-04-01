@@ -53,8 +53,6 @@ angular.module('starter.controllers', [])
 })
 
 .controller('ProjectCtrl', function ($scope, $stateParams) {
-
-    $scope.project.projectTitle = $stateParams.projectTitle;
-    $scope.project.projectId = $stateParams.projectId
-
+    alert($stateParams.projectTitle);
+    $scope.project = { title: $stateParams.projectTitle, id: $stateParams.projectId };
 });
