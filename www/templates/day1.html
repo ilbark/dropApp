@@ -1,0 +1,26 @@
+<ion-view view-title="Day 1">
+  <ion-content>
+    <!--Top header including text box and left/right navigation-->
+      <div class="row">
+        <div class="col col-offset-25 col-25 text-right">
+            <button class="button button-block ion-chevron-left button-positive button-small">
+            </button>
+        </div>
+        <div class="col col-25 text-left">
+            <button class="button button-block ion-chevron-right button-positive button-small">
+            </button> 
+        </div>
+      </div>
+        <div class="card">
+            <label class="item item-input">
+              <i class="icon ion-search placeholder-icon"></i>
+              <input type="search" placeholder="House #" ng-model="query" ng-enter="enterHouseNumber(query)">
+            </label>
+        </div>
+      <div class="row">
+        <div class="col col-offset-25 col-50">
+            <button class="button button-block button-positive">NEXT</button>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>
